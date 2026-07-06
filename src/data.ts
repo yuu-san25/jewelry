@@ -1,5 +1,13 @@
 import { Product, LiveGoldRates, Review } from './types';
 
+// Import images as ES Modules so Vite bundles them properly for production & sub-paths
+import bridalCollectionImg from './assets/images/bridal_collection_1783334048565.jpg';
+import goldCollectionImg from './assets/images/gold_collection_1783334062106.jpg';
+import diamondCollectionImg from './assets/images/diamond_collection_1783334076159.jpg';
+import patialaHeroImg from './assets/images/patiala_hero_1783334034706.jpg';
+
+export const HERO_IMAGE = patialaHeroImg;
+
 // Let's use the actual generated images for our premium products
 export const PREMIUM_PRODUCTS: Product[] = [
   {
@@ -7,7 +15,7 @@ export const PREMIUM_PRODUCTS: Product[] = [
     name: 'Royal Durbar Kundan Bridal Set',
     category: 'bridal',
     description: 'An extraordinary handcrafted bridal masterpiece featuring pristine kundan settings, vibrant emerald cabochons, fine ruby beads, and fresh seed pearls. Perfect for a traditional Pakistani bride.',
-    image: '/src/assets/images/bridal_collection_1783334048565.jpg',
+    image: bridalCollectionImg,
     weightTolas: 8.5,
     karat: 22,
     details: [
@@ -23,7 +31,7 @@ export const PREMIUM_PRODUCTS: Product[] = [
     name: 'Heritage Rawalpindi Filigree Bangles',
     category: 'gold',
     description: 'A pair of exquisite, heavy 22k gold bangles meticulously engraved with traditional Punjabi filigree patterns. Feature a secure vintage screw clasp.',
-    image: '/src/assets/images/gold_collection_1783334062106.jpg',
+    image: goldCollectionImg,
     weightTolas: 4.2,
     karat: 22,
     details: [
@@ -39,7 +47,7 @@ export const PREMIUM_PRODUCTS: Product[] = [
     name: 'Eternal Promise Solitaire Ring',
     category: 'diamond',
     description: 'A stunning brilliant-cut 1.5 carat round solitaire diamond mounted on an elegant 18k white gold band, paired with a matching pavé-set diamond eternity band.',
-    image: '/src/assets/images/diamond_collection_1783334076159.jpg',
+    image: diamondCollectionImg,
     weightTolas: 0.6,
     karat: 18,
     details: [
@@ -55,7 +63,7 @@ export const PREMIUM_PRODUCTS: Product[] = [
     name: 'Patiala Signature Royal Haar',
     category: 'bridal',
     description: 'A majestic, multi-tiered royal gold necklace with micro-enameling and dangling pearl tassels, evoking the luxurious legacy of the princely state of Patiala.',
-    image: '/src/assets/images/patiala_hero_1783334034706.jpg',
+    image: patialaHeroImg,
     weightTolas: 12.0,
     karat: 22,
     details: [

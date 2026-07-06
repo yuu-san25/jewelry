@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import { Phone, MessageSquare, MapPin, Share2, Bookmark, Award, ShieldCheck, Heart, Sparkles, ChevronRight } from 'lucide-react';
-import { RAW_STORE_INFO, GOLD_RATES } from '../data';
+import { RAW_STORE_INFO, GOLD_RATES, HERO_IMAGE } from '../data';
 
 interface HomeProps {
   setCurrentPage: (page: string) => void;
@@ -32,7 +32,7 @@ export default function Home({ setCurrentPage }: HomeProps) {
         {/* Banner Image Background */}
         <div className="absolute inset-0 z-0">
           <img
-            src="/src/assets/images/patiala_hero_1783334034706.jpg"
+            src={HERO_IMAGE}
             alt="Patiala Jewellers Royal Masterpiece"
             className="w-full h-full object-cover filter brightness-45 scale-105"
             referrerPolicy="no-referrer"
