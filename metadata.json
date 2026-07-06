@@ -1,0 +1,6 @@
+{
+  "name": "Patiala Jewellers",
+  "description": "A luxury multi-page digital showroom for Patiala Jewellers on Murree Road, Rawalpindi. Features exquisite traditional and bridal collections, live gold price calculators, customer reviews, and an AI-powered design consultant.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
